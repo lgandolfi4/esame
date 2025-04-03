@@ -25,7 +25,9 @@ Sulla sinistra noterete la possibilità di scegliere il modello di previsione da
 
 #  Visualizzazione dei Dati con Tableau:
 Al seguente link:
-    https://public.tableau.com/views/RealEstateValuation/Foglio1?:language=it-IT&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link 
+
+https://public.tableau.com/shared/CF9JM2HKX?:display_count=n&:origin=viz_share_link
+
 è riportata una mappa satellitare interattiva dei prezzi originali (del dataset originale) ottenuta utilizzando Tableau.
 Per una consultazione più dettagliata, utilizza i filtri a destra della mappa per selezionare intervalli di dati come l'età delle case, e altre variabili.
 
