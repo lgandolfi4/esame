@@ -24,4 +24,9 @@ Utilizzate il vostro terminale spostandovi nella directory "scripts" e digitando
 Sulla sinistra noterete la possibilità di scegliere il modello di previsione da voi preferito che in maodo molto intuitivo vi darà la possibilità di calcolare il costo al metro quadro dell'immobile.
 
 
+-   Visualizzazione dei Dati:
+Al seguente link xxx è riportata una mappa satellitare interattiva dei prezzi originali (del dataset originale) ottenuta utilizzando Tableau.
+Per una consultazione più dettagliata, utilizza i filtri a destra della mappa per selezionare intervalli di dati come l'età delle case, e altre variabili.
+
+
 

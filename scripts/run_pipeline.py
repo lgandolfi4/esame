@@ -7,8 +7,6 @@ from src import config
 from src.load_data import load_data
 from src.make_model import train_model
 from src.make_model import train_model_bonus
-# from src.evaluation import evaluate_model
-# from src.save_results import save_predictions
 
 # Set up logging
 logging.basicConfig(filename='../logs/pipeline.log', level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")

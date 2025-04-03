@@ -43,7 +43,7 @@ else:
     Distanza_MRT = st.number_input("🚆 Inserisci distanza da stazione più vicina:")
     Numero_convenience_store = st.number_input("🏪 Inserisci numero di mini market nelle vicinanze:")
     if st.button("📊 Calcola costo dell'immobile"):
-        if (Età_casa < 0 or Età_casa > 43.8) or (Distanza_MRT < 23.38284 or Distanza_MRT > 6488.021) or (Numero_convenience_store < 0 or Numero_convenience_store > 10):
+        if (Età_casa < 0 or Distanza_MRT < 0  or Numero_convenience_store < 0):
             st.warning("⚠️ Valori immessi non validi!")
         else:
             X_vector = [[Età_casa, Distanza_MRT, Numero_convenience_store]]
