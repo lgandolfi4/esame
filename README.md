@@ -12,7 +12,10 @@ L'analisi inizia con l'esplorazione del database utilizzando il notebook eda.ipy
 -   X5 latitude e X6 longitude → Coordinate geografiche dell’immobile. La prima assume valori compresi tra 24.93207 e 25.01459 e la seconda tra 121.47353 e 121.56627.
 -   Y house price of unit area → Prezzo dell'immobile per unità di area (es. per metro quadro). Assume valori compresi tra 7.6 e 117.5
 
-Data la natura quantitativa della variabile di risposta, ho scelto di applicare il modello KNeighborsRegressor, che non viene preceduto da un'operazione di standardizzazione delle variabili poichè effettuando dei test ho notato come questa peggiorasse siginifcativamente la capacità di previsione dei modelli; infatti, il modello potrebbe performare meglio con covariate non scalate a causa della scala simile delle variabili, del tipo di modello utilizzato o delle specifiche caratteristiche del dataset, come la dimensione o la correlazione tra le variabili.
+Data la natura quantitativa della variabile di risposta, ho optato per l'applicazione del modello KNeighborsRegressor, senza precederlo da una fase di standardizzazione 
+delle variabili. Durante le prove, infatti, ho osservato che la standardizzazione peggiorava significativamente le performance predittive del modello. È possibile che il 
+modello ottenga risultati migliori con covariate non scalate, grazie alla scala simile delle variabili, alla tipologia del modello impiegato o alle caratteristiche specifiche 
+del dataset, come la sua dimensione o la correlazione tra le variabili.
 
 # Modelli di Predizione
 Tramite questo algoritmo vado a costruire due modelli per predirre il prezzo al metro quadro di immobili:
@@ -20,8 +23,10 @@ Tramite questo algoritmo vado a costruire due modelli per predirre il prezzo al 
 2) Modello bonus: Età dell’immobile + Distanza dalla stazione MRT più vicina + numero di minimarket nelle vicinanze
 
 # Come utilizzare l'applicazione
-Utilizzate il vostro terminale spostandovi nella directory "scripts" e digitando prima "python run_pipeline.py" (oppure "python3 run_pipeline.py" se non funziona la prima) e successivamente "streamlit run ui.py" verrete reindirizzati sul vostro browser predefinito di ricerca dove si aprirà la pagina web utile per stimare il prezzo al metro quadro degli immobili.
-Sulla sinistra noterete la possibilità di scegliere il modello di previsione da voi preferito che in maodo molto intuitivo vi darà la possibilità di calcolare il costo al metro quadro dell'immobile.
+Utilizzate il vostro terminale spostandovi nella directory "scripts" e digitando prima "python run_pipeline.py" (oppure "python3 run_pipeline.py" se la prima non funziona), 
+e successivamente "streamlit run ui.py". Verrete reindirizzati al vostro browser predefinito, dove si aprirà la pagina web utile per stimare il prezzo al metro quadro degli 
+immobili. Sulla sinistra noterete la possibilità di scegliere il modello di previsione che preferite, il quale, in modo molto intuitivo, vi permetterà di calcolare il costo al 
+metro quadro dell'immobile.
 
 #  Visualizzazione dei Dati con Tableau:
 Al seguente link:
