@@ -9,6 +9,10 @@ from sklearn.neighbors import KNeighborsRegressor
 from sklearn.model_selection import train_test_split
 from sklearn.datasets import load_iris
 
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import mean_squared_error, r2_score
+
 import os
 import sys
 sys.path.append(os.path.abspath('..'))  # Adds the parent directory to sys.path
@@ -25,7 +29,6 @@ def load_data():
     return df
 
 def train_model():
-     """train logistic model"""
      df = load_data()
      X=df[['Latitude','Longitude']]
      y=df['HousePrice']
@@ -36,18 +39,16 @@ def train_model():
          X, y, df_indices, test_size=0.2, random_state=42
      )
      
-     modello=KNeighborsRegressor(n_neighbors=
-                              5)
+     modello = RandomForestRegressor(n_estimators=100, random_state=42)
      modello.fit(X_train, y_train)
      y_pred= modello.predict(X_test)
  
      logging.info('saving KNN model...')
-     with open(os.path.join(config.MODELS_PATH, "knn.pickle"), "wb") as file:
+     with open(os.path.join(config.MODELS_PATH, "rf.pickle"), "wb") as file:
          pickle.dump(modello,file)
 
 
 def train_model_bonus():
-     """train logistic model"""
      df = load_data()
      X=df[['HouseAge','DistanceToMRT','NumberOfConvenienceStores']]
      y=df['HousePrice']
@@ -58,13 +59,12 @@ def train_model_bonus():
          X, y, df_indices, test_size=0.2, random_state=42
      )
      
-     modello_bonus=KNeighborsRegressor(n_neighbors=
-                              5)
+     modello_bonus = RandomForestRegressor(n_estimators=100, random_state=42)
      modello_bonus.fit(X_train, y_train)
      y_pred= modello_bonus.predict(X_test)
  
      logging.info('saving KNN model...')
-     with open(os.path.join(config.MODELS_PATH, "knn.pickle_bonus"), "wb") as file:
+     with open(os.path.join(config.MODELS_PATH, "rf.pickle_bonus"), "wb") as file:
          pickle.dump(modello_bonus,file)
 
     

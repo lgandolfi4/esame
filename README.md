@@ -23,10 +23,8 @@ Tramite questo algoritmo vado a costruire due modelli per predirre il prezzo al 
 2) Modello bonus: Età dell’immobile + Distanza dalla stazione MRT più vicina + numero di minimarket nelle vicinanze
 
 # Come utilizzare l'applicazione
-Utilizzate il vostro terminale spostandovi nella directory "scripts" e digitando prima "python run_pipeline.py" (oppure "python3 run_pipeline.py" se la prima non funziona), 
-e successivamente "streamlit run ui.py". Verrete reindirizzati al vostro browser predefinito, dove si aprirà la pagina web utile per stimare il prezzo al metro quadro degli 
-immobili. Sulla sinistra noterete la possibilità di scegliere il modello di previsione che preferite, il quale, in modo molto intuitivo, vi permetterà di calcolare il costo al 
-metro quadro dell'immobile.
+Dopo aver scaricato la cartella del progetto, aprire un IDE come VsCode
+Successivamente imposta la cartella di lavoro "scripts" digitando "python run_pipeline.py" (oppure "python3 run_pipeline.py" se la prima non funziona) ed infine "streamlit run ui.py". Verrete reindirizzati al vostro browser predefinito, dove si aprirà la pagina web utile per stimare il prezzo al metro quadro degli immobili. Sulla sinistra noterete la possibilità di scegliere il modello di previsione che preferite, il quale, in modo molto intuitivo, vi permetterà di calcolare il costo al metro quadro dell'immobile.
 
 #  Visualizzazione dei Dati con Tableau:
 Al seguente link:

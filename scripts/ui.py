@@ -10,9 +10,9 @@ import pandas as pd
 import numpy as np
  
 
-with open(os.path.join(config.MODELS_PATH, "knn.pickle"), "rb") as file:
+with open(os.path.join(config.MODELS_PATH, "rf.pickle"), "rb") as file:
         modello = pickle.load(file)
-with open(os.path.join(config.MODELS_PATH, "knn.pickle_bonus"), "rb") as file:
+with open(os.path.join(config.MODELS_PATH, "rf.pickle_bonus"), "rb") as file:
         modello_bonus = pickle.load(file)
 
 
