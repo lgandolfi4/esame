@@ -3,7 +3,7 @@ Benvenuto nel progetto Real Estate Valuation!
 Questo repository contiene un'analisi predittiva dei prezzi immobiliari nella regione di Sindian, Nuova Taipei, Taiwan.
 
 # Esplorazione dei Dati
-L'analisi inizia con l'esplorazione del database utilizzando il notebook eda.ipynb.
+L'analisi inizia con l'esplorazione del database utilizzando il notebook eda.ipynb. Le variabili sono:
 -   No → Numero identificativo della transazione; è la chiave primaria del dataset.
 -   X1 transaction date → Data della transazione immobiliare (espressa in un formato numerico).
 -   X2 house age → Età dell’immobile in anni. Assume valori compresi tra 0 e 43.8.
